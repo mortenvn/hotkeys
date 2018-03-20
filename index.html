@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href="img/favicon.ico">
+  <title>Hotkeys</title>
+</head>
+
+
+<!-- 
+  TODO:
+  * Less verbose way of adding adding keybindings (preact?)
+  * Search
+  * Stars
+  * Hide hotkeys (checkmark == mastered)
+  * Filters (starred, hidden, all)
+  * Sets (most useful, all, beginner)
+  * Special requirements (red *): Click or hover to see instructions
+-->
+
+<!-- 
+    INTERFACE
+    cmd , : Settings
+    cmd p : file search
+    cmd shift p: command palette
+
+    MOUSE OPERATIONS
+    Multiple cursors: alt + click
+    Column selection: shift + alt + mouse click and hold
+
+    PROGRAMS
+    * Chrome (devtools)
+    * Finder
+    * Sketch
+    * Atom
+    * Sublime
+    * Lightroom
+    
+
+-->
+<!--  ⇧ ⌥ ⌘ ⌃  ← ↑ ↓ → -->
+
+<body>
+  <nav>
+    <div class="wrapper nav-wrapper">
+      <div class="brand">
+        <img src="img/logo.svg" alt="">
+      </div>
+      <h1>Hotkeys</h1>
+      <input type="text" class="search" placeholder="Search for hotkeys or applications">
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div class="group">
+      <div class="header">
+        <div class="logo-wrapper">
+          <img src="img/apple.svg" alt="" class="logo" style="position: relative; top: -3px">
+        </div>
+        <h2>macOS</h2>
+      </div>
+      <div class="hotkeys">
+
+        <div class="hotkey">
+          <h3>Move to start of line</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>←</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Move to end of line</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>→</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Select from caret to start</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>←</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Select from caret to end</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>→</kbd>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="header">
+        <div class="logo-wrapper">
+          <img src="img/vscode.png" alt="" class="logo">
+        </div>
+        <h2>Visual Studio Code</h2>
+      </div>
+
+      <div class="hotkeys">
+
+        <div class="category">Move & Copy</div>
+
+        <div class="hotkey">
+          <h3>Move line up </h3>
+          <div class="shortcut">
+            <kbd>⌥</kbd>
+            <kbd>↑</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Move line down</h3>
+          <div class="shortcut">
+            <kbd>⌥</kbd>
+            <kbd>↓</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Duplicate line up</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌥</kbd>
+            <kbd>↑</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Duplicate line down</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌥</kbd>
+            <kbd>↓</kbd>
+          </div>
+        </div>
+
+        <div class="category">Selection</div>
+
+        <div class="hotkey">
+          <h3>Find next of selection</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>D</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Skip next of selection</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>K</kbd>
+            <span class="plus">+</span>
+            <kbd>⌘</kbd>
+            <kbd>D</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <div class="text">
+            <h3>Select content inside HTML tag</h3>
+            <p>Press
+              <kbd>→</kbd> to expand the selection. Press
+              <kbd>←</kbd> to shrink the selection.</p>
+          </div>
+
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌃</kbd>
+            <kbd>⌘</kbd>
+            <kbd>→</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Column selection</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌥</kbd>
+            <span class="plus">+</span>
+            <img src="img/cursor-drag.svg" alt="" class="cursor">
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Undo cursor position</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <div class="text">
+            <h3>Open or create file</h3>
+            <p>Click on a file path to open it</p>
+          </div>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <span class="plus">+</span>
+            <img src="img/cursor.svg" alt="" class="cursor">
+          </div>
+        </div>
+
+        <div class="category">Search</div>
+
+        <div class="hotkey">
+          <h3>Find</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>F</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Select all occurrences of Find match</h3>
+          <div class="shortcut">
+            <kbd>⌥</kbd>
+            <kbd>Enter</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Find next</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>G</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Find previous</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>G</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Find all</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>F</kbd>
+          </div>
+        </div>
+
+        <div class="category">Panes</div>
+
+        <div class="hotkey">
+          <h3>New pane</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>\</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Go to pane</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>1</kbd>
+            <span class="or">or</span>
+            <kbd>⌘</kbd>
+            <kbd>2</kbd>
+            <span class="or">or</span>
+            <kbd>⌘</kbd>
+            <kbd>3</kbd>
+          </div>
+        </div>
+
+        <div class="category">Interface</div>
+
+        <div class="hotkey">
+          <h3>Toggle sidebar</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>B</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Toggle error</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>M</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>File Explorer</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>E</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Debugger</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>D</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Extensions</h3>
+          <div class="shortcut">
+            <kbd>⇧</kbd>
+            <kbd>⌘</kbd>
+            <kbd>X</kbd>
+          </div>
+        </div>
+
+        <div class="category">Misc.</div>
+
+        <div class="hotkey">
+          <h3>Rename symbol</h3>
+          <div class="shortcut">
+            <kbd>F2</kbd>
+          </div>
+        </div>
+
+        <div class="hotkey">
+          <h3>Select current line</h3>
+          <div class="shortcut">
+            <kbd>⌘</kbd>
+            <kbd>I</kbd>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
