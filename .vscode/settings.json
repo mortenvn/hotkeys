@@ -1,0 +1,6 @@
+{
+  "eslint.packageManager": "yarn",
+
+  // Is flow enabled
+  "flow.enabled": false,
+}
