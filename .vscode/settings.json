@@ -3,4 +3,9 @@
 
   // Is flow enabled
   "flow.enabled": false,
+
+  // Use stylelint instead of default
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
