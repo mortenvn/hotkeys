@@ -2,9 +2,6 @@
 
 ## Setup TODOS
 
-* Stylelint for styled components
-* Commands for running tests
-* Prepush hooks for running tests
 * Write an actual readme
 
 ## Ideas
