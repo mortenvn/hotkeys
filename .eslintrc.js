@@ -18,14 +18,15 @@ module.exports = {
     },
   },
   rules: {
-    'react/no-unknown-property': ['error', { ignore: ['class', 'for'] }],
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
-    'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
-    'no-underscore-dangle': ['off'],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-    'react/forbid-prop-types': ['off'],
-    'import/prefer-default-export': ['off'],
+    'no-underscore-dangle': ['off'],
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
+    'import/prefer-default-export': ['off'],
+    'react/display-name': ['off'],
+    'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
+    'react/no-unknown-property': ['error', { ignore: ['class', 'for'] }],
+    'react/prop-types': ['off'],
     'react/sort-comp': [
       1,
       {
